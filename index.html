@@ -69,19 +69,36 @@
         .car-feature {
           color: #ffffff !important;
         }
-        .middle-content, .outer-container {
+        .middle-content,
+        .outer-container {
           background-color: #ebebeb !important;
-          background: #ebebeb !important;;
+          background: #ebebeb !important;
         }
-      } 
-      </style>   
-      <!--[if (IE)]>
-        <style>
-          .button-for-old-ie {
-            display:block !important;
-          }
-        </style>
-        <![endif]-->
+      }
+      @media (max-width: 500px) {
+        .car-feature {
+          font-size: 14px !important;
+        }
+      }
+      @media (max-width: 450px) {
+        .tesla-logo-image {
+          width: 90% !important;
+        }
+        .header-table-left-col {
+          padding-left: 10px !important;
+        }
+        .header-table-right-col {
+          padding-right: 10px !important;
+        }
+      }
+    </style>
+    <!--[if (IE)]>
+      <style>
+        .button-for-old-ie {
+          display: block !important;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body
     bgcolor="#070707"
@@ -93,79 +110,83 @@
     "
   >
     <!--[if (gte mso 9)|(IE)]>
-        <table align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#070707">
+        <table align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#070707" width="600">
             <tr>
                 <td>
                     <![endif]-->
     <!--<outer container>-->
     <table
-      width="600"
       cellspacing="0"
       cellpadding="0"
       align="center"
       border="0"
       class="outer-container"
-      style="width: 600px; background: #444444; background-color: #444444"
+      style="
+        width: 100%;
+        max-width: 600px;
+        background: #444444;
+        background-color: #444444;
+      "
       bgcolor="#444444"
       role="presentation"
+      width="100%"
     >
       <tr>
-        <td>
+        <td align="center">
           <!--<container>-->
-            <!--[if (gte mso 9)|(IE)]>
+          <!--[if (gte mso 9)|(IE)]>
         <table align="center" cellpadding="0" cellspacing="0" width="600" border="0" bgcolor="#444444">
             <tr>
                 <td align="center">
                     <![endif]-->
-    <!--<outer container>-->
+          <!--<outer container>-->
           <table
-            width="600"
             cellspacing="0"
             cellpadding="0"
             align="center"
             border="0"
             class="container"
-            style="margin: 0"
+            style="margin: 0; table-layout: fixed; width: 100%"
             role="presentation"
           >
             <tr>
-              <td>
+              <td class="td-600">
                 <!--<header>-->
                 <table
-                  width="600"
                   cellspacing="0"
                   cellpadding="0"
                   border="0"
                   align="center"
                   class="header-table"
                   bgcolor="#161a1d"
-                  style="background: #161a1d; background-color: #161a1d"
+                  style="
+                    background: #161a1d;
+                    background-color: #161a1d;
+                    width: 100%;
+                  "
                 >
                   <tr>
                     <td
+                      class="header-table-left-col"
                       style="
                         padding-top: 16px;
                         padding-bottom: 16px;
                         padding-left: 16px;
+                        width: 50%;
+                        max-width: 216px;
                       "
                     >
                       <img
                         width="195"
                         height="27"
-                        style="width: 195px; height: 27px"
+                        style="max-width: 195px; height: 27px"
                         src="http://drive.google.com/uc?id=1-Tx2j8WJskxVgac_T5a7jBg4JYDezq4T"
                         alt="tesla logo"
                         class="tesla-logo-image"
                       />
                     </td>
                     <td
-                      class="horizontal-spacer"
-                      width="143"
-                      style="width: 143px"
-                    ></td>
-                    <td
-                      width="230"
-                      class="header-p-td"
+                      class="header-table-right-col"
                       style="
                         color: #ffffff;
                         font-size: 14px;
@@ -174,8 +195,9 @@
                         padding-top: 16px;
                         padding-right: 16px;
                         padding-bottom: 16px;
-                        width: 216px;
+                        max-width: 216px;
                         font-weight: 600;
+                        width: 50%;
                       "
                     >
                       <p class="header-p" style="color: #ffffff">
@@ -187,19 +209,21 @@
                 <!--</header>-->
                 <!--<header image>-->
                 <table
-                  width="600"
                   cellspacing="0"
                   cellpadding="0"
                   border="0"
                   align="center"
                   class="header-image"
+                  role="presentation"
+                  style="table-layout: fixed; width: 100%"
                 >
                   <tr>
                     <td align="center">
-                      <img align="center"
+                      <img
+                        align="center"
                         width="600"
                         height="450"
-                        style="width: 600px"
+                        style="width: 100%; max-width: 600px"
                         src="https://drive.google.com/uc?id=1IXg-Aix7nI5p5PoieEP8gihwpXTGR5rJ"
                         alt="tesla white model x with falcon wings open "
                         class="tesla-model-x-header-img"
@@ -216,10 +240,16 @@
                   align="center"
                   class="middle-content"
                   role="presentation"
+                  style="table-layout: fixed; width: 95%"
                 >
                   <tr>
-                    <td width="568" align="center">
+                    <td style="width: 100%" align="center">
                       <!--<middle-content-text>-->
+                      <!--[if (gte mso 9)|(IE)]>
+                <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
+                  <tr>
+                    <td>
+                    <![endif]-->
                       <table
                         cellspacing="0"
                         cellpadding="0"
@@ -227,6 +257,7 @@
                         align="center"
                         class="middle-content-text"
                         role="presentation"
+                        style="table-layout: fixed; width: 100%"
                       >
                         <tr>
                           <td>
@@ -238,6 +269,7 @@
                               align="center"
                               class="middle-content-text-h1"
                               role="presentation"
+                              style="table-layout: fixed; width: 100%"
                             >
                               <tr>
                                 <td>
@@ -246,13 +278,14 @@
                                       <tr>
                                         <td style="padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 0; text-align:center;">
                                           <![endif]-->
-                                  <h1 align="center"
+                                  <h1
+                                    align="center"
                                     class="main-header-text"
                                     style="color: #ffffff"
                                   >
                                     Order your Tesla today
                                   </h1>
-                                   <!--[if (gte mso 9)]>
+                                  <!--[if (gte mso 9)]>
                                 </td>
                                 </tr>
                                 </table>
@@ -269,16 +302,17 @@
                               align="center"
                               class="middle-content-text-p"
                               role="presentation"
+                              style="table-layout: fixed; width: 100%"
+                              s
                             >
                               <tr>
-                                <td width="568"
+                                <td
                                   style="
                                     text-align: justify;
                                     line-height: 1.3;
                                     margin: 0;
                                     padding: 0;
                                     color: #ada7a7;
-                                    width:568px
                                   "
                                 >
                                   <!--[if (gte mso 9)]>
@@ -302,7 +336,7 @@
                                     functions of your Tesla from the driver’s
                                     seat.
                                   </p>
-                                    <!--[if (gte mso 9)]>
+                                  <!--[if (gte mso 9)]>
                                 </td>
                                 </tr>
                                 </table>
@@ -319,6 +353,7 @@
                               border="0"
                               align="center"
                               role="presentation"
+                              style="table-layout: fixed; width: 100%"
                             >
                               <tr>
                                 <td style="padding-top: 10px">
@@ -330,6 +365,7 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
                                       <td
@@ -337,19 +373,20 @@
                                           padding-top: 10px;
                                           padding-bottom: 10px;
                                         "
-                                      > 
-                                      <!--[if (gte mso 9)]>
+                                      >
+                                        <!--[if (gte mso 9)|(IE)]>
                                     <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
                                       <tr>
                                         <td style="padding-bottom: 20px; text-align:center;">
                                           <![endif]-->
-                                        <h2 align="center"
+                                        <h2
+                                          align="center"
                                           class="model-x-header-h2"
                                           style="color: #ffffff"
                                         >
                                           Model X Plaid
                                         </h2>
-                                  <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                 </td>
                                 </tr>
                                 </table>
@@ -366,32 +403,40 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
-                                      <td width="276"
-                                      style="padding-bottom: 16px; "
+                                      <td
+                                        class="small-img-column"
+                                        style="
+                                          padding-bottom: 16px;
+                                          vertical-align: top;
+                                        "
                                       >
-                                        <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                     <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
                                       <tr>
                                         <td width="276" style="padding:0; margin:0;">
                                           <![endif]-->
+
                                         <img
                                           width="276"
                                           height="200"
                                           loading="lazy"
                                           src="https://drive.google.com/uc?id=1VFswi8PacQeY-i7tGn8l5ks9qlDqHCML"
                                           alt="model x plaid white image of the car from the back"
-                                          class="model-x-plaid-back-of-the-car"
+                                          class="model-x-plaid-back-of-the-car responsive-small-img"
                                           style="
-                                            width: 276px;
                                             height: 200px;
                                             display: block;
                                             border-radius: 15px;
+                                            max-width: 276px;
+                                            width: 100%;
                                           "
                                         />
-                                         <!--[if (gte mso 9)]>
-                                    <table align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+
+                                        <!--[if (gte mso 9)|(IE)]>
+                                    <table align="left" cellpadding="0" cellspacing="0" border="0" role="presentation">
                                       <tr>
                                         <td width="276" style="padding-top:10px;" align="left">
                                           <![endif]-->
@@ -411,38 +456,66 @@
                                           acceleration of any SUV, Model X Plaid
                                           is the highest performing SUV ever
                                           built.
-                                        </p> <!--[if (gte mso 9)]>
+                                        </p>
+                                        <!--[if (gte mso 9)|(IE)]>
                                         </td>
-                                        </tr>
+                                      </tr>
+                                    </table>
+                                    <![endif]-->
+                                      </td>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                        <table
+                                          align="center"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="16"
+                                          border="0"
+                                          role="presentation"
+                                        >
+                                          <tr>
+                                            <td width="16"></td>
+                                          </tr>
                                         </table>
-                                        <![endif]-->
-                                      </td>
-                                      <td class="horizontal-spacer" width="16"></td>
-                                      <!--[if (gte mso 9)]>
-                                      </td>
-                                      <td width="16" style="padding:0; margin:0;"></td>
-                                      <td width="276" style="padding:0; margin:0;">
-                                        <![endif]-->
-                                      <td width="276" style="padding-bottom: 16px;"
+                                      <![endif]-->
+                                      <td
+                                        class="horizontal-spacer"
+                                        style="
+                                          padding-bottom: 16px;
+                                          max-width: 16px;
+                                          width: 3%;
+                                          mso-hide: all;
+                                        "
+                                      ></td>
+                                      <td
+                                        class="small-img-column"
+                                        style="
+                                          padding-bottom: 16px;
+                                          vertical-align: top;
+                                        "
                                       >
+                                        <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      <td width="276" style="padding:0; margin:0;" valign="top">
+                                          <![endif]-->
                                         <img
                                           width="276"
                                           height="200"
                                           loading="lazy"
                                           src="https://drive.google.com/uc?id=11ZBB0N4az7xdf_PKSQbTiaa5QwdNSn41"
                                           alt="model x plaid white image of the car's interior"
-                                          class="model-x-plaid-interior"
+                                          class="model-x-plaid-interior responsive-small-img"
                                           style="
-                                            width: 276px;
+                                            max-width: 276px;
                                             height: 200px;
                                             display: block;
                                             border-radius: 15px;
+                                            width: 100%;
                                           "
                                         />
-                                         <!--[if (gte mso 9)]>
-                                    <table align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                    <table align="right" cellpadding="0" cellspacing="0" width="276" border="0" role="presentation">
                                       <tr>
-                                        <td width="276" style="padding-top:10px;" align="left">
+                                        <td width="276" style="padding-top:10px;" align="right">
                                           <![endif]-->
                                         <p
                                           class="model-x-interior-p"
@@ -456,16 +529,17 @@
                                             padding-top: 10px;
                                           "
                                         >
-                                          With the most power and quickest
-                                          acceleration of any SUV, Model X Plaid
-                                          is the highest performing SUV ever
-                                          built.
-                                        </p> <!--[if (gte mso 9)]>
+                                          Wireless Gaming Up to 10 teraflops of
+                                          processing power enables in-car gaming
+                                          on-par with today’s newest consoles.
+                                        </p>
+                                        <!--[if (gte mso 9)|(IE)]>
                                         </td>
                                         </tr>
                                         </table>
-                                        <![endif]--></td> 
-                                        <!--[if (gte mso 9)]>
+                                        <![endif]-->
+                                      </td>
+                                      <!--[if (gte mso 9)|(IE)]>
                                 </td>
                                 </tr>
                                 </table>
@@ -481,28 +555,34 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
-                                    <tr> 
-                                      <td width="568" align="center" style="padding: 0; margin: 0">
-                                        <!--[if (gte mso 9)]>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        style="padding: 0; margin: 0"
+                                      >
+                                        <!--[if (gte mso 9)|(IE)]>
                                     <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
                                       <tr>
                                         <td width="568" style="padding:0; margin:0;">
                                           <![endif]-->
+
                                         <img
                                           width="568"
                                           height="411"
                                           style="
                                             display: block;
-                                            width: 568px;
+                                            max-width: 568px;
                                             height: 411px;
                                             border-radius: 15px 15px 0 0;
+                                            width: 100%;
                                           "
                                           src="https://drive.google.com/uc?id=1RUnXTf51aFm6SY7XweEm4hcODUv-LIBi"
                                           alt="image of tesla model x plaid car from the front"
-                                          class="front-of-the-model-x"
+                                          class="front-of-the-model-x responsive-big-img"
                                         />
-                                         <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                 </td>
                                 </tr>
                                 </table>
@@ -519,10 +599,12 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    width="100%"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
                                       <td
-                                        width="140"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -531,7 +613,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -544,13 +626,15 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           333 mi Range (EPA est.)
                                         </p>
                                       </td>
                                       <td
-                                        width="140"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -559,7 +643,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -572,13 +656,15 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           2.5 s 0-60 mph
                                         </p>
                                       </td>
                                       <td
-                                        width="140"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -587,7 +673,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -600,13 +686,15 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           9.9 s 1/4 Mile
                                         </p>
                                       </td>
                                       <td
-                                        width="142"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -615,7 +703,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 142px;
+                                          width: 25%;
                                         "
                                       >
                                         <p
@@ -627,6 +715,8 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           1,020 hp Power
@@ -643,17 +733,16 @@
                                     align="center"
                                     role="presentation"
                                     class="model-x-button"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
-                                      <td
-                                        style="padding-top: 40px;"
-                                      >
+                                      <td style="padding-top: 40px">
                                         <!--[if (gte mso 9)| (IE)]>
-                <table width="150" align="center" cellpadding="0" cellspacing="0" border="0"> 
+                <table width="150" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
                     <tr>  
                         <td align="center" style="padding-bottom: 20px;">
-                            <div>&nbsp;
-                            </div>
+                            &nbsp;
+                            
                                 <![endif]-->
                                         <div
                                           align="center"
@@ -711,36 +800,37 @@
                                           >
                                         </div>
                                         <!--[if (gte mso 9)| (IE)]>
-                <div>&nbsp;
-                </div>
+                &nbsp;
+                
                 </td>
                 </tr>
                 </table>
                 <![endif]-->
-                <a class="button-for-old-ie"
-                                            href="https://www.tesla.com/modelx"
-                                            target="_blank"
-                                            style="
-                                              background-color: #ffffff !important;
-                                              background: #ffffff !important;
-                                              border: 1px solid #000000;
-                                              margin-bottom: 20px;
-                                              margin-top: 20px;
-                                              border-radius: 10px;
-                                              color: #000000 !important;
-                                              display: none;
-                                              font-family: sans-serif;
-                                              font-size: 16px;
-                                              font-weight: bold;
-                                              line-height: 40px;
-                                              text-align: center;
-                                              text-decoration: none;
-                                              width: 150px;
-                                              -webkit-text-size-adjust: none;
-                                              mso-hide: all;
-                                            "
-                                            >Ready to order</a
-                                          >
+                                        <a
+                                          class="button-for-old-ie"
+                                          href="https://www.tesla.com/modelx"
+                                          target="_blank"
+                                          style="
+                                            background-color: #ffffff !important;
+                                            background: #ffffff !important;
+                                            border: 1px solid #000000;
+                                            margin-bottom: 20px;
+                                            margin-top: 20px;
+                                            border-radius: 10px;
+                                            color: #000000 !important;
+                                            display: none;
+                                            font-family: sans-serif;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 150px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                          >Ready to order</a
+                                        >
                                       </td>
                                     </tr>
                                   </table>
@@ -757,6 +847,7 @@
                               border="0"
                               align="center"
                               role="presentation"
+                              style="table-layout: fixed; width: 100%"
                             >
                               <tr>
                                 <td style="padding-top: 10px">
@@ -768,6 +859,7 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
                                       <td
@@ -781,13 +873,14 @@
                                       <tr>
                                         <td style="padding-bottom: 20px; text-align:center;">
                                           <![endif]-->
-                                        <h2 align="center"
+                                        <h2
+                                          align="center"
                                           class="cybertruck-header-h2"
                                           style="color: #ffffff"
                                         >
                                           Cybertruck - coming soon
                                         </h2>
-                                         <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)]>
                                          </td>
                                          </tr>
                                         </table>
@@ -804,30 +897,39 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
-                                      <td width="276" style="padding-bottom: 16px; width: 276px;">
-                                      <!--[if (gte mso 9)|(IE)]>
+                                      <td
+                                        class="small-img-column"
+                                        style="
+                                          padding-bottom: 16px;
+                                          vertical-align: top;
+                                        "
+                                      >
+                                        <!--[if (gte mso 9)|(IE)]>
                                     <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
                                       <tr>
                                         <td width="276" style="padding:0; margin:0;" valign="top">
                                           <![endif]-->
+
                                         <img
                                           width="276"
                                           height="200"
                                           loading="lazy"
                                           src="https://drive.google.com/uc?id=1Z9vDFaZYXqSwzHZe3ulVjTvZdmfc5JsG"
                                           alt="cybertruck image of the car from the back"
-                                          class="cybertruck-back-of-the-car"
+                                          class="cybertruck-back-of-the-car responsive-small-img"
                                           style="
-                                            width: 276px;
+                                            max-width: 276px;
                                             height: 200px;
                                             display: block;
                                             border-radius: 15px;
+                                            width: 100%;
                                           "
                                         />
-                                        <!--[if (gte mso 9)]>
-                                    <table align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                    <table align="left" cellpadding="0" width="276" cellspacing="0" border="0" role="presentation">
                                       <tr>
                                         <td width="276" style="padding-top:10px;" align="left">
                                           <![endif]-->
@@ -848,39 +950,69 @@
                                           impact force for improved performance
                                           and damage tolerance.
                                         </p>
-                                         <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                         </td>
                                       </tr>
                                     </table>
                                     <![endif]-->
                                       </td>
-                                      <td class="horizontal-spacer" width="16" style="padding-bottom: 16px; width: 16px;"></td>
-                                      <td width="276" style="padding-bottom: 16px; width: 276px;">
-                                      <!--[if (gte mso 9)]>
+                                      <!--[if (gte mso 9)|(IE)]>
+                                        <table
+                                          align="center"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          width="16"
+                                          border="0"
+                                          role="presentation"
+                                        >
+                                          <tr>
+                                            <td width="16"></td>
+                                          </tr>
+                                        </table>
+                                      <![endif]-->
+                                      <td
+                                        class="horizontal-spacer"
+                                        style="
+                                          padding-bottom: 16px;
+                                          max-width: 16px;
+                                          width: 3%;
+                                          mso-hide: all;
+                                        "
+                                      ></td>
+                                      <td
+                                        class="small-img-column"
+                                        style="
+                                          padding-bottom: 16px;
+                                          vertical-align: top;
+                                        "
+                                      >
+                                        <!--[if (gte mso 9)|(IE)]>
                                       </td>
                                       <td width="276" style="padding:0; margin:0;" valign="top">
                                           <![endif]-->
+
                                         <img
                                           width="276"
                                           height="200"
                                           loading="lazy"
                                           src="https://drive.google.com/uc?id=16qAG51d6TwklH2E_ZtKajrn7Su03cCQo"
-                                          alt="cybertruck image of the car from the back"
-                                          class="cybertruck-back-of-the-car"
+                                          alt="cybertruck image interior of the car"
+                                          class="cybertruck-interior responsive-small-img"
                                           style="
-                                            width: 276px;
+                                            max-width: 276px;
                                             height: 200px;
                                             display: block;
                                             border-radius: 15px;
+                                            width: 100%;
                                           "
                                         />
-                                         <!--[if (gte mso 9)]>
-                                    <table align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" width="276" cellpadding="0" cellspacing="0" border="0" role="presentation">
                                       <tr>
                                         <td width="276" style="padding-top:10px;" align="left">
                                           <![endif]-->
                                         <p
-                                          class="model-x-interior-p"
+                                          class="cybertruck-interior-p"
                                           style="
                                             text-align: left;
                                             line-height: 1.3;
@@ -896,13 +1028,13 @@
                                           Complete with a 17” touchscreen with
                                           an all-new customized user interface.
                                         </p>
-                                          <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                         </td>
                                       </tr>
                                     </table>
                                     <![endif]-->
                                       </td>
-                                      <!--[if (gte mso 9)]>
+                                      <!--[if (gte mso 9)|(IE)]>
                                         </td>
                                       </tr>
                                     </table>
@@ -918,28 +1050,34 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
-                                      <td width="568" align="center" style="padding: 0; margin: 0">  
-                                        <!--[if (gte mso 9)]>
+                                      <td
+                                        align="center"
+                                        style="padding: 0; margin: 0"
+                                      >
+                                        <!--[if (gte mso 9)|(IE)]>
                                           <table align="center" cellpadding="0" cellspacing="0" width="568" border="0" role="presentation">
                                             <tr>
                                               <td width="568">
                                                 <![endif]-->
+
                                         <img
                                           width="568"
                                           height="411"
                                           style="
                                             display: block;
-                                            width: 568px;
+                                            max-width: 568px;
                                             height: 411px;
                                             border-radius: 15px 15px 0 0;
+                                            width: 100%;
                                           "
                                           src="https://drive.google.com/uc?id=1lj-uienvvQQG3RKuR6FWHDtZXkbbOEYb"
                                           alt="image of tesla cybertruck car from the front"
-                                          class="front-of-the-cybertruck"
+                                          class="front-of-the-cybertruck responsive-big-img"
                                         />
-                                         <!--[if (gte mso 9)]>
+                                        <!--[if (gte mso 9)|(IE)]>
                                         </td>
                                       </tr>
                                     </table>
@@ -956,10 +1094,11 @@
                                     border="0"
                                     align="center"
                                     role="presentation"
+                                    style="table-layout: fixed; width: 100%"
                                   >
                                     <tr>
                                       <td
-                                        width="140"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -968,7 +1107,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -981,13 +1120,16 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           500 mi Range (EPA est.)
                                         </p>
                                       </td>
                                       <td
-                                        width="140"
+                                        align="center"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -996,7 +1138,8 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -1009,13 +1152,15 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           2.9 s 0-60 mph
                                         </p>
                                       </td>
                                       <td
-                                        width="140"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -1024,7 +1169,7 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 140px;
+                                          width: 25%;
                                           border-right: 2px solid #161a1d;
                                         "
                                       >
@@ -1037,13 +1182,15 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           11.6 s 1/4 Mile
                                         </p>
                                       </td>
                                       <td
-                                        width="142"
+                                        class="car-feature-column"
                                         style="
                                           padding: 0;
                                           margin: 0;
@@ -1052,7 +1199,6 @@
                                           background: #000000;
                                           background-color: #000000;
                                           vertical-align: middle;
-                                          width: 142px;
                                         "
                                       >
                                         <p
@@ -1064,6 +1210,8 @@
                                             font-size: 16px;
                                             text-align: center;
                                             line-height: 1.3;
+                                            padding-left: 5px;
+                                            padding-right: 5px;
                                           "
                                         >
                                           800 hp Power
@@ -1089,11 +1237,11 @@
                                         "
                                       >
                                         <!--[if (gte mso 9)| (IE)]>
-                <table width="150" align="center" cellpadding="0" cellspacing="0" border="0"> 
+                <table width="150" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
                     <tr>  
                         <td align="center" style="padding-bottom: 20px;">
-                            <div>&nbsp;
-                            </div>
+                            &nbsp;
+                            
                                 <![endif]-->
                                         <div
                                           align="center"
@@ -1150,37 +1298,38 @@
                                             >Ready to pre-order</a
                                           >
                                         </div>
-                                       
+
                                         <!--[if (gte mso 9)| (IE)]>
-                <div>&nbsp;
-                </div>
-                </td>
-                </tr>
-                </table>
-                <![endif]--> <a class="button-for-old-ie"
-                href="https://www.tesla.com/cybertruck"
-                target="_blank"
-                style="
-                  background-color: #ffffff !important;
-                  background: #ffffff !important;
-                  border: 1px solid #000000;
-                  margin-bottom: 20px;
-                  margin-top: 20px;
-                  border-radius: 10px;
-                  color: #000000 !important;
-                  display: none;
-                  font-family: sans-serif;
-                  font-size: 16px;
-                  font-weight: bold;
-                  line-height: 40px;
-                  text-align: center;
-                  text-decoration: none;
-                  width: 170px;
-                  -webkit-text-size-adjust: none;
-                  mso-hide: all;
-                "
-                >Ready to pre-order</a
-              >
+                                          &nbsp;
+                                        </td>
+                                      </tr>
+                                     </table>
+                                     <![endif]-->
+                                        <a
+                                          class="button-for-old-ie"
+                                          href="https://www.tesla.com/cybertruck"
+                                          target="_blank"
+                                          style="
+                                            background-color: #ffffff !important;
+                                            background: #ffffff !important;
+                                            border: 1px solid #000000;
+                                            margin-bottom: 20px;
+                                            margin-top: 20px;
+                                            border-radius: 10px;
+                                            color: #000000 !important;
+                                            display: none;
+                                            font-family: sans-serif;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            width: 170px;
+                                            -webkit-text-size-adjust: none;
+                                            mso-hide: all;
+                                          "
+                                          >Ready to pre-order</a
+                                        >
                                       </td>
                                     </tr>
                                   </table>
@@ -1192,6 +1341,11 @@
                           </td>
                         </tr>
                       </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+                <![endif]-->
                       <!--</middle-content-text>-->
                     </td>
                   </tr>
@@ -1206,7 +1360,7 @@
                   align="center"
                   role="presentation"
                   bgcolor="#3b3b3b"
-                  width="600"
+                  style="max-width: 600px; width: 100%; table-layout: fixed"
                 >
                   <tr>
                     <td
@@ -1217,6 +1371,11 @@
                         padding-right: 16px;
                       "
                     >
+                      <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="600"  bgcolor="#3b3b3b "border="0" role="presentation">
+                                  <tr>
+                                    <td width="600" style="padding:0; margin:0;">
+                                    <![endif]-->
                       <!--<footer header>-->
                       <table
                         class="footer-header"
@@ -1225,6 +1384,7 @@
                         border="0"
                         align="center"
                         role="presentation"
+                        style="table-layout: fixed; width: 100%"
                       >
                         <tr>
                           <td style="padding-top: 10px">
@@ -1234,7 +1394,8 @@
                                 font-size: 16px;
                                 font-weight: 400;
                                 letter-spacing: 1px;
-                                color: #ffffff"
+                                color: #ffffff;
+                                text-align: center;
                               "
                             >
                               DOWNLOAD THE TESLA APP
@@ -1251,19 +1412,34 @@
                         border="0"
                         align="center"
                         role="presentation"
+                        style="table-layout: fixed; width: 100%"
                       >
                         <tr>
+                          <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="108" border="0" role="presentation">
+                                  <tr>
+                                    <td width="108" style="padding:0; margin:0;">
+                                      </td>
+                                    </td>
+                                  </tr>
+                                </table>
+                            <![endif]-->
                           <td
                             class="horizontal-spacer"
-                            width="108"
-                            style="width: 108px"
+                            style="width: 18%; max-width: 108px; mso-hide: all"
                           ></td>
                           <td style="padding-top: 10px; padding-bottom: 20px">
+                            <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="166.66" border="0" role="presentation">
+                                  <tr>
+                                    <td width="166.66" style="padding:0; margin:0;">
+                                    <![endif]-->
                             <a
                               width="166.66"
                               height="60"
                               href="https://play.google.com/store/apps/details?id=com.teslamotors.tesla&hl=en&gl=US"
                               class="google-store-link"
+                              style="width: 100%; max-width: 166.66px"
                             >
                               <img
                                 width="166.66"
@@ -1274,22 +1450,43 @@
                                 class="google-play-store-icon"
                                 style="
                                   display: block;
-                                  width: 166.66px;
+                                  max-width: 166.66px;
+                                  width: 100%;
                                   height: 60px;
                                 "
                             /></a>
+                            <!--[if (gte mso 9)]>
+                           </td>
+                          </tr>
+                        </table>
+                       <![endif]-->
                           </td>
+                          <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="120" border="0" role="presentation">
+                                  <tr>
+                                    <td width="120" style="padding:0; margin:0;">
+                                      </td>
+                                    </td>
+                                  </tr>
+                                </table>
+                            <![endif]-->
                           <td
                             class="horizontal-spacer"
                             width="20"
-                            style="width: 20px"
+                            style="width: 5%; max-width: 28px; mso-hide: all"
                           ></td>
                           <td style="padding-top: 10px; padding-bottom: 20px">
+                            <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="166.66" border="0" role="presentation">
+                                  <tr>
+                                    <td width="166.66" style="padding:0; margin:0;">
+                                    <![endif]-->
                             <a
                               width="166.66"
                               height="60"
                               href="https://apps.apple.com/us/app/tesla/id582007913"
                               class="apple-store-link"
+                              style="width: 100%; max-width: 166.66px"
                             >
                               <img
                                 width="166.66"
@@ -1300,15 +1497,29 @@
                                 class="apple-store-icon"
                                 style="
                                   display: block;
-                                  width: 166.66px;
+                                  max-width: 166.66px;
+                                  width: 100%;
                                   height: 60px;
                                 "
                             /></a>
+                            <!--[if (gte mso 9)]>
+                           </td>
+                          </tr>
+                        </table>
+                       <![endif]-->
                           </td>
+                          <!--[if (gte mso 9)]>
+                                <table align="center" cellpadding="0" cellspacing="0" width="108" border="0" role="presentation">
+                                  <tr>
+                                    <td width="108" style="padding:0; margin:0;">
+                                      </td>
+                                    </td>
+                                  </tr>
+                                </table>
+                            <![endif]-->
                           <td
                             class="horizontal-spacer"
-                            width="108"
-                            style="width: 108px"
+                            style="width: 18%; max-width: 108px; mso-hide: all"
                           ></td>
                         </tr>
                       </table>
@@ -1345,7 +1556,8 @@
                                   <a
                                     href="https://www.facebook.com"
                                     class="facebook-link"
-                                    ><img
+                                  >
+                                    <img
                                       width="33"
                                       height="33"
                                       src="https://drive.google.com/uc?id=1Ni1gk2rdG_sUzz3looTRCgmEd3MqB6us"
@@ -1452,11 +1664,15 @@
                                 <td
                                   class="horizontal-spacer"
                                   width="189"
-                                  style="width: 189px"
+                                  style="max-width: 189px"
                                 ></td>
                                 <td
                                   width="85"
-                                  style="width: 85px; text-align: left"
+                                  style="
+                                    width: 30%;
+                                    max-width: 145px;
+                                    text-align: left;
+                                  "
                                 >
                                   <a
                                     class="web-version-link"
@@ -1472,7 +1688,11 @@
                                 ></td>
                                 <td
                                   width="85"
-                                  style="width: 85px; text-align: right"
+                                  style="
+                                    width: 30%;
+                                    max-width: 145px;
+                                    text-align: right;
+                                  "
                                 >
                                   <a
                                     width="80"
@@ -1517,7 +1737,13 @@
                                 <td>
                                   <p
                                     class="reason-txt"
-                                    style="color: #ada7a7; font-size: 12px; line-height: 1.3;"
+                                    style="
+                                      color: #ada7a7;
+                                      font-size: 12px;
+                                      line-height: 1.3;
+                                      text-align: center;
+                                      text-align-last: center;
+                                    "
                                   >
                                     You are receiving this email advertisement
                                     because you expressed an interest in TESLA.
@@ -1541,6 +1767,8 @@
                                       color: #ada7a7;
                                       font-size: 12px;
                                       line-height: 1.3;
+                                      text-align: center;
+                                      text-align-last: center;
                                     "
                                   >
                                     All rights reserved © 2022 KamilSalic.
@@ -1553,6 +1781,11 @@
                         </tr>
                       </table>
                       <!--</footer copyright>-->
+                      <!--[if (gte mso 9)]>
+                      </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
                     </td>
                   </tr>
                 </table>
@@ -1561,19 +1794,19 @@
             </tr>
           </table>
           <!--[if (gte mso 9)]>
-         <td>
-            <tr>
-                </table>
-                    <![endif]-->
+          </td>
+        </tr>
+        </table>
+        <![endif]-->
           <!--</container>-->
         </td>
       </tr>
     </table>
     <!--</outer container>-->
     <!--[if (gte mso 9)]>
-         <td>
-            <tr>
-                </table>
-                    <![endif]-->
+    </td>
+  </tr>
+  </table>
+  <![endif]-->
   </body>
 </html>
